@@ -1,11 +1,9 @@
 j = input()
 if j.isdigit():
-  i = 0
   j = int(j)
-  while True:
-    print(i)
-    i += 1
-    if i == j or i == 10:
+  for i in range(j):
+    if i >= 10:
       break
+    print(i)
 else:
   print('input must be digit')
